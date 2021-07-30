@@ -19,13 +19,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/598c6b517f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
@@ -110,74 +112,89 @@
     <div class="container-fluid order" id="make-order">
         
     </div><br>
-    <footer class="bg-light text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #3b5998;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #55acee;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Google -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #dd4b39;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-google"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #ac2bac;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Linkedin -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #0082ca;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #333333;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="footer-widget">
+                <h3>Stay in touch</h3>
+                <div class="footer-widget-content">
+                  <a href="mailto:sales@example.com" class="contact-link">sales@example.com</a>
+                  <a href="mailto:support@example.com" class="contact-link red"> support@example.com </a>
+                  <i class="fas fa-phone" id="phone">  +254-702-637-380</i> <br>
+                  <i class="fas fa-envelope" id="mail">  support@baileyslounge.co.ke</i>
+                  <div class="footer-social">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                  </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+            <div class="footer-widget">
+              <h3>Latest Events</h3>
+              <div class="footer-widget-content">
+                <div class="media">
+                    <div class="media-left">
+                       <a href="#"><img class="media-object" src="http://placehold.it/60x60" alt="..."></a>
+                    </div>
+                    <div class="media-body">
+                       <p><a href="#">vulputate velit esse consequat. </a></p>
+                       <span>September 30, 2016 </span>
+                    </div>
+                 </div>
+                <div class="media">
+                    <div class="media-left">
+                       <a href="#."><img class="media-object" src="http://placehold.it/60x60" alt="..."></a>
+                    </div>
+                    <div class="media-body">
+                       <p><a href="#">vulputate velit esse consequat. </a></p>
+                       <span>September 30, 2016 </span>
+                    </div>
+                 </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+            <div class="footer-widget">
+              <h3>Opening Hour</h3>
+              <div class="footer-widget-content">
+              <div class="open-time ">
+                <ul class="opening-time">
+                  <li><span><i class="fa fa-times"></i></span><p class="clock-time"><strong>monday :</strong> closed</p>
+                   </li>
+                  <li><span><i class="fa fa-check"></i></span><p><strong>tue-fri :</strong> 8am - 12am</p></li>
+                  <li><span><i class="fa fa-check"></i></span><p><strong>sat-sun :</strong> 7am - 1am</p></li>
+                  <li><span><i class="fa fa-check"></i></span><p><strong>holydays :</strong> 12pm-12am</p></li>
+                </ul>
+                 </div>
+              </div>
+              </div></div>
+            
+            <div class="col-sm-3">
+            <div class="footer-widget">
+              <h3>Latest Events</h3>
+              <div class="footer-widget-content">
+                <div class="images-gellary">
+                  <ul>
+                    <li><a href="#"><img src="http://placehold.it/85x85" alt="Instagram 01"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/85x85" alt="Instagram 02"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/85x85" alt="Instagram 03"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/85x85" alt="Instagram 04"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/85x85" alt="Instagram 05"></a></li>
+                    <li><a href="#"><img src="http://placehold.it/85x85" alt="Instagram 06"></a></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
       </footer>
 </body>
 </html>
