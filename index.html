@@ -205,17 +205,67 @@
                 </div>
                 <div class="col-sm-9">
                     <div class="row">
-                    <div class="col-8 col-sm-6">
-                        Level 2: .col-8 .col-sm-6
-                    </div>
-                    <div class="col-4 col-sm-6">
-                        Level 2: .col-4 .col-sm-6
-                    </div>
+                        <div class="col-8 col-sm-6">
+                            <div class="col-sm-7">
+                                <div id="information">
+                                    <p>Processing starts as soon as you make your order, get your order delivered in a very short time .</p>
+                                    <p>The total amount including delivery fee will be paid upon delivery.</p>
+            
+            
+                                </div>
+                                <div class="choise">
+                                    <h2 id="summary">Summary of your Order</h2>
+                                    <div id="your-orders">
+                                        <table class="table table-sm pizzatable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Size</th>
+                                                    <th scope="col">Crust</th>
+                                                    <th scope="col">Topping</th>
+                                                    <th scope="col">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="ordersmade">
+                                                <tr>
+                                                    <td id="pizzaname"></td>
+                                                    <td id="pizzasize"></td>
+                                                    <td id="pizzacrust"></td>
+                                                    <td id="pizzatopping"></td>
+                                                    <td id="totals"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p id="pizzatotal"></p>
+                                        <p id="totalbill"></p>
+                                        <p id="addedprice">Delivery fee is Ksh.300/-</p>
+                                        <p id="finallmessage"></p>
+                                    </div>
+                                    <button class="btn btn-orange addPizza">Add Another Pizza</button>
+                                    <button class="btn btn-orange" id="checkout">Checkout</button>
+                                    <button class="btn btn-orange deliver">Continue</button>
+                                    <button class="btn btn-orange cancel">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                            <div class="col-4 col-sm-6">
+                                <div class="delivery">
+                                    <form action=" ">
+                                        <div class="form-group">
+                                            <input type="text" id="name" class="form-control mb-3" placeholder="Your name">
+                                            <input type="number" id="phone" class="form-control mb-3" placeholder="Your Pnone Number">
+                                            <input type="text" id="location" class="form-control mb-3" placeholder="Your Location">
+                                            <button class="btn btn-orange" id="final-order">Place Order</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                     </div>
                 </div>
-            </div>
+        </div>
             
-        </div><br>
+        
     </section>
 <!-- this is the footer section -->
     <footer class="footer">
