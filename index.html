@@ -46,7 +46,7 @@
         </div>
     </section><!-- end of landing section-->
     
-    <div class="container">
+    <div class="container" id="show">
         <div class="row">
             <div class="col-md-3" id="Kitchen">
                 <h3>The Kitchen Lounge</h3>
@@ -106,17 +106,17 @@
                             </tr>
                             <tr>
                                 <td>Crispy</td>
-                                <td>Ksh.120</td>
+                                <td>Ksh.150</td>
 
                             </tr>
                             <tr>
                                 <td>Stuffed</td>
-                                <td>Ksh.80</td>
+                                <td>Ksh.100</td>
 
                             </tr>
                             <tr>
                                 <td>Glutten-free</td>
-                                <td>Ksh.140</td>
+                                <td>Ksh.120</td>
 
                             </tr>
                         </table>
@@ -152,10 +152,69 @@
             </div>
         </div>
     </div>
+    <section id="pizza-order">
+        <div class="container-fluid order" id="make-order">
+                <div class="row">
+                <div class="col-sm-3">
+                    <form id="myform" action="">
+                        <label for="select">Select Your Flavor</label><br>
+                        <select class="browser-default custom-select custom-select-md mb-3 name">
+                            <option selected value="choose">Select your flavor</option>
+                            <option value="Neapolitan Pizza">Neapolitan Pizza</option>
+                            <option value="Chicago Pizza">Chicago Pizza</option>
+                            <option value="New York Pizza">New York Pizza</option>
+                            <option value="Sicilian Pizza">Sicilian Pizza</option>
+                            <option value="Greek Pizza">Greek Pizza</option>
+                            <option value="Carlifornia Pizza">Carlifornia Pizza</option>
+                        </select><br><br>
+                        <label for="select">Select the Size   </label><br>
+                        <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                            <option selected value="0">Select the Size here</option>
+                            <option value="large">Large @Ksh. 1200</option>
+                            <option value="medium">Medium @Ksh. 100</option>
+                            <option value="small">Small @Ksh. 700</option>
+                        </select><br><br>
+                        <label for="crust">Select your favorite Crust</label><br>
+                        <select class="browser-default custom-select custom-select-md mb-3 " id="crust">
+                            <option selected value="0 ">Select your favorite Crust</option>
+                            <option value="Crispy">Crispy @Ksh. 150</option>
+                            <option value="Stuffed">Stuffed @Ksh. 100</option>
+                            <option value="Gluten-free">Gluten@Ksh. 120</option>
+                        </select><br><br>
+                        <label for="Toppings">Select Your Favourite Toppings</label><br>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                            <label class="custom-control-label" for="Sausage">Sausage</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                            <label class="custom-control-label" for="Bacon">Bacon</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                            <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
 
-    <div class="container-fluid order" id="make-order">
-        
-    </div><br>
+                        </div>
+                        <!-- <p><b>Each topping cost Ksh.60</b></p> -->
+
+                        <button type="submit" class="btn btn-orange proceed">Proceed</button>
+
+                    </form>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                    <div class="col-8 col-sm-6">
+                        Level 2: .col-8 .col-sm-6
+                    </div>
+                    <div class="col-4 col-sm-6">
+                        Level 2: .col-4 .col-sm-6
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div><br>
+    </section>
     <footer class="footer">
             <p class="bail">Bailey's Pizza Lounge</p>
         <div class="container">
