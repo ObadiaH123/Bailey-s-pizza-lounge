@@ -29,15 +29,15 @@ $(document).ready(function() {
                 price = 0;
                 break;
             case "large":
-                price = 800;
+                price = 1200;
                 console.log(price);
                 break;
             case "medium":
-                price = 600;
+                price = 1000;
                 console.log("The price is " + price);
                 break;
             case "small":
-                price = 400;
+                price = 700;
                 console.log(price);
             default:
                 console.log("error");
@@ -47,13 +47,13 @@ $(document).ready(function() {
                 crust_price = 0;
                 break;
             case "Crispy":
-                crust_price = 120;
+                crust_price = 150;
                 break;
             case "Stuffed":
-                crust_price = 80;
+                crust_price = 100;
                 break;
             case "Gluten-free":
-                crust_price = 140;
+                crust_price = 120;
                 break;
             default:
                 console.log("No price");
@@ -106,15 +106,15 @@ $(document).ready(function() {
                     price = 0;
                     break;
                 case "large":
-                    price = 800;
+                    price = 1200;
                     console.log(price);
                     break;
                 case "medium":
-                    price = 600;
+                    price = 1000;
                     console.log("The price is " + price);
                     break;
                 case "small":
-                    price = 400;
+                    price = 700;
                     console.log(price);
                 default:
                     console.log("error");
@@ -124,13 +124,13 @@ $(document).ready(function() {
                     crust_price = 0;
                     break;
                 case "Crispy":
-                    crust_price = 120;
+                    crust_price = 150;
                     break;
                 case "Stuffed":
-                    crust_price = 80;
+                    crust_price = 100;
                     break;
                 case "Gluten-free":
-                    crust_price = 140;
+                    crust_price = 120;
                     break;
                 default:
                     console.log("No price");
@@ -156,5 +156,78 @@ $(document).ready(function() {
             $("#ordersmade").append('<tr><td id="pizzaname">' + newOrder.name + '</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">' + newOrder.crust + '</td><td id="pizzatopping">' + newOrder.topping + '</td><td id="totals">' + newOrder.total + '</td></tr>');
             console.log(newOrder);
         });
+        // Checkout button
+        $("button#checkout").click(function() {
+            $("button#checkout").hide();
+            $("button.addPizza").hide();
+            $("button.cancel").slideDown(1000);
+            $("button.deliver").slideDown(1000);
+            $("#addedprice").slideDown(1000);
+            console.log("Your total bill equals to Ksh. " + checkoutTotal + "/-");
+            $("#pizzatotal").append("Your bill is Ksh. " + checkoutTotal + "/-");
+            // $("#ordersmade").text("");
+        });
+        // cancel button
+
+        $("button.cancel").click(function() {
+            $("button#checkout").hide();
+            $("button.addPizza").hide();
+            $("button.cancel").hide();
+            $("button.deliver").hide();
+            $("h2#summary").hide();
+            $("#pizzatotal").text("You've Successfully cancel the order. Nothing in the cart.");
+            $("#addedprice").text("");
+            $("#ordersmade").text("");
+
+
+        });
+
+        // home delivery button
+        $("button.deliver").click(function() {
+            $(".pizzatable").hide();
+            $(".choise h2").hide();
+            $(".delivery").slideDown(1000);
+            $("#addedprice").hide();
+            $("button.deliver").hide();
+            $("button.cancel").hide();
+            $("#pizzatotal").hide();
+            let deliceryamount = checkoutTotal + 200;
+            console.log("You will pay sh. " + deliceryamount + " on delivery");
+            $("#totalbill").append("The total amount to be paid is: " + deliceryamount + "/-");
+        });
+
+        // On clicking place order button
+        $("button#final-order").click(function(event) {
+            event.preventDefault();
+
+            $("#pizzatotal").hide();
+            $(".delivery").hide();
+            $("button#final-order").hide();
+            let deliceryamount = checkoutTotal + 200;
+            console.log("Final Bill is: " + deliceryamount);
+            let person = $("input#name").val();
+            let phone = $("input#phone").val();
+            let location = $("input#location").val();
+
+            // Getting date and time
+            var today = new Date();
+            var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+            var time = (today.getHours() + 1) + ":" + (today.getMinutes());
+            var dateTime = date + ' ' + time;
+
+            if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
+
+                $("#finallmessage").append("Congratulations " + person + "! your order has been received and it will be delivered to you at " + location + " before " + time + " " + " " +
+                    date + ". <br> Total amount to be paid is Ksh." +
+                    deliceryamount + " / -");
+                $("#totalbill").hide();
+                $("#finallmessage").slideDown(1200);
+            } else {
+                alert("Please provide your details here to enable us reach you");
+                $(".delivery").show();
+                $("button#final-order").show();
+            }
+        });
+        event.preventDefault();
     });
 });
