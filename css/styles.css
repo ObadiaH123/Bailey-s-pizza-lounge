@@ -181,7 +181,7 @@
     footer .contact-link {
       display: inline-block;
       width: 100%;
-      color: #333;
+      color:white;
     }
     footer .footer-social ul {
       padding-left: 0;
@@ -203,9 +203,12 @@
     }
     footer .opening-time {
       padding-left: 0;
+      color: white;
     }
     footer .opening-time li {
       list-style: none;
+      color: white;
+      font-size: 20px;
     }
     footer .opening-time li span {
       float: left;
@@ -213,18 +216,21 @@
     }
     footer .opening-time li span .fa-times {
       color: red;
+      font-size: 20px;
     }
     footer .opening-time li strong {
-      color: red;
+      color: aqua;
     }
     footer .media-body a {
-      color: #333;
+      color: white;
+      font-size: 20px;
     }
     footer .media-body a:hover {
       color: red;
     }
     footer .media-body span {
-      color: #969696;
+      color: white;
+      font-size: 15px;
     }
     footer .images-gellary ul {
       padding-left: 0;
@@ -246,4 +252,10 @@
     #mail{
       font-size: 20px;
       color: white;
+    }
+    .bail{
+      text-align: center;
+      font-size: 30px;
+      color: chartreuse;
+      font-family: 'Nosifer', cursive;
     }
