@@ -65,9 +65,9 @@
         font-weight: 500;
         font-family: 'Mogra', cursive;
     }
-    .place-order{
+    /* .place-order{
       margin-left: 25%;
-    }
+    } */
           
     @media (min-width: 1024px) {
         #land {
