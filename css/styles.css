@@ -259,7 +259,12 @@
     }
     #summary{
       font-size: 40px;
+      font-weight: 600;
       font-family: 'Mogra', cursive;
+    }
+    #now{
+      font-family: 'Mogra', cursive;
+      font-size: 35px;
     }
     
   /* this is footer styles */
