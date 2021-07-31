@@ -11,9 +11,9 @@ function Getpizza(name, size, crust, topping, total) {
 }
 // User interface logic
 
-// proceed button
+// confirm button
 $(document).ready(function() {
-    $("button.proceed").click(function(event) {
+    $("button.confirm").click(function(event) {
         $("button.cancel").hide();
         let pname = $(".name option:selected").val();
         let psize = $("#size option:selected").val();
@@ -70,12 +70,12 @@ $(document).ready(function() {
 
         if ((psize == "0") && (pcrust == "0")) {
             console.log("nothing selected");
-            $("button.proceed").show();
+            $("button.confirm").show();
             $("#tracking").show();
             $("div.choise").hide();
             alert("Please select pizza size and crust");
         } else {
-            $("button.proceed").hide();
+            $("button.confirm").hide();
             $("#tracking").hide();
             $("div.choise").slideDown(1000);
         }
