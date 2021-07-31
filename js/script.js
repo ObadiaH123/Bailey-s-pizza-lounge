@@ -74,8 +74,12 @@ $(document).ready(function(){
 
     if((psize == "0") && (pcrust == "0")) {
         console.log("nothing selected");
-        $("button.proceed").show();
-        $()
+        $("button.continue").show();
+        $("#tracking").show();
+        $("div.choosed").hide();
+        alert("Hello Customer select the pizza size and crust");
+    } else {
+        $("button.continue").hide
     }
 
 
