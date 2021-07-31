@@ -124,6 +124,37 @@ $(document).ready(function(){
             default:
                 console.log("error");
         }
+        switch (pcrust) {
+            case "0":
+                crust_price = 0;
+                break;
+            case "Crispy":
+                crust_price = 150;
+                break;
+            case "Stuffed":
+                crust_price = 100;
+                break;
+            case "Gluten-free":
+                crust_price = 120;
+                break;
+            default:
+                console.log("No price");
+        }
+        
+        if (psize == "large") {
+            var topping_value = ptopping.length * 100;
+        } else if (psize == "medium") {
+            var topping_value = ptopping.length * 80;
+        } else {
+            var topping_value = ptopping.length * 40;
+        }
+
+        console.log("toppins value" + topping_value);
+        total = price + crust_price + topping_value;
+        console.log(total);
+
+        checkoutTotal = checkoutTotal + total;
+        console.log(checkoutTotal);
 
 
         }); 
