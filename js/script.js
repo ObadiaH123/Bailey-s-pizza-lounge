@@ -220,13 +220,13 @@ $(document).ready(function() {
 
             if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-                $("#finallmessage").append("Congratulations " + person + "! your order has been received and it will be delivered to you at " + location + " before " + time + " " + " " +
+                $("#finallmessage").append("Congratulations " + person + "! your order has been received and processed, it will be delivered to you to " + location + " before " + time + " " + " " +
                     date + ". <br> Total amount to be paid is Ksh." +
                     deliceryamount + " / -");
                 $("#totalbill").hide();
                 $("#finallmessage").slideDown(1200);
             } else {
-                alert("Please provide your details here to enable us reach you");
+                alert("Please provide your details so we can contact you");
                 $(".delivery").show();
                 $("button#final-order").show();
             }

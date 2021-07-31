@@ -245,6 +245,22 @@
     .delivery{
       margin-right: 20%;
     }
+    #information p{
+      font-size: 25px;
+    }
+    input[type=text] {
+      border: none;        
+      padding: 4px 8px;
+      border-radius: 12px; 
+    }
+    input[type=text]:focus{
+      outline: none;      
+      box-shadow: 0 0 0 2px orange; 
+    }
+    #summary{
+      font-size: 40px;
+      font-family: 'Mogra', cursive;
+    }
     
   /* this is footer styles */
     .red {
