@@ -79,7 +79,14 @@ $(document).ready(function(){
         $("div.choosed").hide();
         alert("Hello Customer select the pizza size and crust");
     } else {
-        $("button.continue").hide
+        $("button.continue").hide();
+        $("#tracking").hide();
+        $("div.choosed").slideToggle(1600);
+    }
+    total = price + crust_price + topping_value;
+    console.log(total);
+            
+        });
     }
 
 
