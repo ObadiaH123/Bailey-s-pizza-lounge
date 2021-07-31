@@ -54,12 +54,15 @@
       #land h1 span {
         color: chartreuse;
     }
+    #lounge{
+      color:lawngreen;
+    }
       
       #land h2 {
         color: black;
         margin: 5px 0 30px 0;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 500;
         font-family: 'Mogra', cursive;
     }
       
