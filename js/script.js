@@ -46,4 +46,15 @@ $(document).ready(function(){
         default:
             break;
     }
+    switch (pcrust) {
+        case "0":
+            price = 0;
+            break;
+        case ""
+            
+            break;
+    
+        default:
+            break;
+    }
 });
