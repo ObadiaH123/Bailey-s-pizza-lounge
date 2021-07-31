@@ -11,9 +11,9 @@ function Getpizza(name, size, crust, topping, total) {
 }
 // User interface logic
 
-// confirm button
+// proceed button
 $(document).ready(function() {
-    $("button.confirm").click(function(event) {
+    $("button.proceed").click(function(event) {
         $("button.cancel").hide();
         let pname = $(".name option:selected").val();
         let psize = $("#size option:selected").val();
@@ -70,13 +70,13 @@ $(document).ready(function() {
 
         if ((psize == "0") && (pcrust == "0")) {
             console.log("nothing selected");
-            $("button.confirm").show();
-            $("#tracking").show();
+            $("button.proceed").show();
+            $("#information").show();
             $("div.choise").hide();
             alert("Please select pizza size and crust");
         } else {
-            $("button.confirm").hide();
-            $("#tracking").hide();
+            $("button.proceed").hide();
+            $("#information").hide();
             $("div.choise").slideDown(1000);
         }
 
@@ -220,7 +220,7 @@ $(document).ready(function() {
 
             if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-                $("#finallmessage").append("Congratulations " + person + "! your order has been received and succefully processed, it will  delivered to you at " + location + " before " + time + " " + " " +
+                $("#finallmessage").append("Congratulations " + person + "! your order has been received and it will be delivered to you at " + location + " before " + time + " " + " " +
                     date + ". <br> Total amount to be paid is Ksh." +
                     deliceryamount + " / -");
                 $("#totalbill").hide();
