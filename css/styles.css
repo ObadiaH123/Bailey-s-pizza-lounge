@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mogra&family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
     html,
     body,
     header {
@@ -177,13 +178,19 @@
   } */
 
     .col-md-3{
-        background-image: url('https://images.unsplash.com/photo-1592861956120-e524fc739696?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZWF0aW5nJTIwcGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
+        background-image: url('https://images.unsplash.com/photo-1622219809260-ce065fc5277f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZWF0aW5nJTIwcGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
         background-size: cover;
         position: relative;
     }
     #kitchen, h3{
-      text-align: center;
-      margin: 5px 0 30px 0;
+      color: orange;
+      font-family: 'Mogra', cursive;
+    }
+    #kitchen, h4{
+      color:springgreen;
+      font-size: 35px;
+      font-family: 'Chewy', cursive;
+
     }
     #myform {
       margin: 5%;
