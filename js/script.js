@@ -85,9 +85,17 @@ $(document).ready(function(){
     }
     total = price + crust_price + topping_value;
     console.log(total);
+    let checkoutTotal = 0;
+    checkoutTotal = checkoutTotal + total;
+
+    $("#pizzaname").html($(".name option:selected").val());
+    $("#pizzasize").html($(".size option:selected").val());
+    $("#pizzacrust").html($(".crust option:selected").val());
+    $("#pizzatopping").html(ptopping.join(", "));
+    $("#totals").html(total);
             
         });
-    }
+    
 
 
 });
