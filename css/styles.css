@@ -219,16 +219,25 @@
         position: relative;
     }
     #myform {
+      margin: 5%;
       font-size: 16px;
       width: 40%;
-      height: fit-content;
-      position: absolute;
     }
-
-/* this is footer styles */
+    .order {
+        background-color: lightseagreen;
+        height: fit-content;
+    }
+    #myform{
+      font-size: 20px;
+    }
+    
+    #order-head {
+        color: white;
+    }
+  /* this is footer styles */
     .red {
-      color: red !important;
-    }
+        color: red !important;
+      }
 
     footer {
       /* background-color: cyan; */
