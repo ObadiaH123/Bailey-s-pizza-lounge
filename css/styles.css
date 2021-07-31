@@ -239,6 +239,12 @@
         text-align: center;
         font-family: 'Nosifer', cursive;
     }
+    .choise{
+      margin-right: 20%;
+    }
+    .delivery{
+      margin-right: 20%;
+    }
     
   /* this is footer styles */
     .red {
