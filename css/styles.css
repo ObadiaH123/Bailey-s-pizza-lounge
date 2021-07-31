@@ -235,6 +235,9 @@
         color: white;
         width: 50%;
     }
+    #tracking{
+      font-size: 20px;
+    }
   /* this is footer styles */
     .red {
         color: red !important;
