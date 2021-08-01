@@ -29,11 +29,10 @@ Footer also contains Social media icons and by tapping any icon, the link will t
 
 
 ## BDD
-| Behavior Our program should handle             | Input Example When it Receives | Output Example When it Receives     |
-|------------------------------------------------|--------------------------------|-------------------------------------|
-| User enters invalid name and email in the form | emiail: 123erf name: w         | name and email invalid              |
-| User enters valid mail and email in the form   | Email: abc@gmail.com     Name: Ben | name and email valid            |
-| User enters text in the message text area      | Hello form submitted           | Thank you for submitting your form. |
+| Behavior Our program should handle                   | Input Example When it Receives | Output Example When it Receives     |
+|------------------------------------------------      |--------------------------------|-------------------------------------|
+| User enters type of pizza flavor,size,crust,toppings |Summary List                    | All fields filled Validly           |
+| User enters Name, Location, Phone Number             | Success MEssage of Delivery    | Thank you for submitting your form. |
 
 ## Setup/Installation Requirements
 * Git <br>
