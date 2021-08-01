@@ -9,21 +9,21 @@ It showcase different types of pizzas, Toppings and Crust. Customer go through t
 
 ## landing Page.
 Bailey's Pizza Lounge Landing page.
- <image src= "#">
+ <image src= "Images/pizzalanding.png">
 
 ## Services We Offer.
 The section contain tables of the Types of Pizza, Crust and Toppings. A picture of  our Happy customer is displayed at the left hand side of the page.
-<image src= "#">
+<image src= "Images/pizzatable.png">
 
 ## An Interface to Order Pizza. 
 This section contains a form to be filled by the customer, stating clearly the pizza flavour, pizza type, favourite crust and toppings. A customer presses the Proceed button thus displaying the breakdown of the list of ordered items.
 A customer goes forward to fill a form to send us their location where they want a pizza to be delivered to.
-<image src="#">
+<image src="Images/pizzaorder.png">
 
 ## Contact Us
 This is a footer page containing the customer care email, phone number and location where Bailey's Lounge is situated.
 Footer also contains Social media icons and by tapping any icon, the link will take you to their specific social media page. This page also contain the schedule under which Bailey's Pizza Lounge works and on the right hand side is a lucky numbers for winning a pizza.
-<image src="#">
+<image src="Images/pizzafooter.png">
 
 
 
