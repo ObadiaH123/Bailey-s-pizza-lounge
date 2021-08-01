@@ -1,7 +1,7 @@
 # BAILEY'S PIZZA LOUNGE
 ### Live Site
 
-View [live](https://jluseno161.github.io/Pizza-Paleis/) demo.
+View [Site live](https://obadiah123.github.io/Bailey-s-pizza-lounge/) demo.
 
 ### DESCRIPTION
 This Website provide an overview of Bailey's Pizza Lounge.
