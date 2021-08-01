@@ -1,4 +1,8 @@
 # BAILEY'S PIZZA LOUNGE
+### Live Site
+
+View [Site live](https://obadiah123.github.io/Bailey-s-pizza-lounge/) demo.
+
 ### DESCRIPTION
 This Website provide an overview of Bailey's Pizza Lounge.
 It showcase different types of pizzas, Toppings and Crust. Customer go through the website and familiarize themselves of how they will want their pizza to look like. It contains a form to be filled by the customer when they  want to order the pizza. Bailey's Lounge, process the delivery upon receiving the order from the customer.
