@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mogra&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
     html,
     body,
     header {
@@ -21,7 +23,7 @@
     #land {
         width: 100%;
         height: 75vh;
-        background-image: url('https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80');
+        background-image: url('https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzl8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
         background-size: cover;
         position: relative;
     }
@@ -51,60 +53,23 @@
     }
       
       #land h1 span {
-        color:chartreuse;
+        color: chartreuse;
+    }
+    #lounge{
+      color:lawngreen;
     }
       
       #land h2 {
         color: black;
         margin: 5px 0 30px 0;
         font-size: 24px;
-        font-weight: 400;
-    }
-      
-    #land .btn-get-started {
-        font-family: "Roboto", sans-serif;
-        text-transform: uppercase;
         font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 10px 28px;
-        border-radius: 4px;
-        transition: 0.5s;
-        color: #fff;
-        background: #106eea;
+        font-family: 'Mogra', cursive;
     }
-      
-    #land .btn-get-started:hover {
-        background: #247cf0;
-    }
-      
-    #land .btn-watch-video {
-        font-size: 16px;
-        transition: 0.5s;
-        margin-left: 25px;
-        color: #222222;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-      }
-      
-    #land .btn-watch-video i {
-        color: #106eea;
-        font-size: 32px;
-        transition: 0.3s;
-        line-height: 0;
-        margin-right: 8px;
-      }
-      
-      #land .btn-watch-video:hover {
-        color: #106eea;
-      }
-      
-      #land .btn-watch-video:hover i {
-        color: #3b8af2;
-      }
-      
+    /* .place-order{
+      margin-left: 25%;
+    } */
+          
     @media (min-width: 1024px) {
         #land {
           background-attachment: fixed;
@@ -138,25 +103,243 @@
     .col-md-9 h3{
         font-size: 48px;
         text-align: center;
-        font-family: 'Mogra', cursive;
+        font-family: 'Nosifer', cursive;
+        
       }
+    #show{
+        width: 90%;
+    }
 
     .pizz {
         display: flex;
       }
-    .table{
-          font-size: 20px;
+    .table th{
+          font-size: 30px;
+          font-weight: 700;
       }
-    .order {
-        background-image: url(/images/home.jpg);
-        background-size: cover;
-        position: relative;
-        width: 100%;
-        height: 75vh;
+    .table td{
+          font-size: 20px;
+          font-weight: 600;
+
+      }
+    .crust td {
+        border: 1px solid #ddd;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 600;
+        color: #222222;
+        padding: 10px;
     }
+    
+    .crust td {
+        width: 50%
+    }
+    
+    .crust th {
+        border: 1px solid #ddd;
+        text-align: left;
+        color: #222222;
+        font-size: 25px;
+        font-weight: 700;
+        padding: 10px;
+    }
+    
+    .crust table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .crust tr:hover {
+        background-color:rgb(241, 188, 150);
+    }
+    
+    .crust th {
+        background-color: #054707;
+        color: white;
+    }
+    
+    .crust caption {
+        color: white;
+        font-size: 18px;
+    }
+    .head2{
+        font-size: 30px;
+        text-align: center;
+        color: orangered;
+        font-family: 'Mogra', cursive;
+    }
+    /* #pizza-order {
+      width: 100%;
+      height: 75vh;
+      background-image: url('https://images.unsplash.com/photo-1587049479964-c5618ddf1e9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+      background-size: cover;
+      position: relative;
+  } */
 
     .col-md-3{
-        background-image: url('https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=564&q=80');
+        background-image: url('https://images.unsplash.com/photo-1622219809260-ce065fc5277f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZWF0aW5nJTIwcGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
         background-size: cover;
         position: relative;
+    }
+    #kitchen, h3{
+      color: orange;
+      font-family: 'Mogra', cursive;
+    }
+    #kitchen, h4{
+      color:springgreen;
+      font-size: 35px;
+      font-family: 'Chewy', cursive;
+
+    }
+    #myform {
+      margin: 5%;
+      font-size: 16px;
+      width: 40%;
+    }
+    .order {
+        background-color: rgb(184, 240, 237);
+        height: fit-content;
+    }
+    #myform{
+      font-size: 20px;
+    }
+    
+    #order-head {
+        color: orange;
+        width: 50%;
+        margin-left: 30%;
+        text-align: center;
+        font-family: 'Nosifer', cursive;
+    }
+    .choise{
+      margin-right: 20%;
+    }
+    .delivery{
+      margin-right: 20%;
+    }
+    #information p{
+      font-size: 25px;
+    }
+    input[type=text] {
+      border: none;        
+      padding: 4px 8px;
+      border-radius: 12px; 
+    }
+    input[type=text]:focus{
+      outline: none;      
+      box-shadow: 0 0 0 2px orange; 
+    }
+    #summary{
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Mogra', cursive;
+    }
+    #now{
+      font-family: 'Mogra', cursive;
+      font-size: 35px;
+    }
+    .centerImage1{
+      margin-left: 30%;
+    }
+    
+  /* this is footer styles */
+    .red {
+        color: red !important;
+      }
+
+    footer {
+      /* background-color: cyan; */
+      background-image: url('https://images.unsplash.com/photo-1590234229790-b210b3dcd422?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29va2luZyUyMHBpenphfGVufDB8fDB8fA==&ixlib=rb-1.2.1&w=1000&q=80');
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 80px 0;
+    }
+    footer .footer-widget h3 {
+      margin-bottom: 30px;
+      font-size: 35px;
+      font-weight: 600;
+      color:#106eea;
+      font-family: 'Rancho', cursive;
+    }
+    footer .contact-link {
+      display: inline-block;
+      width: 100%;
+      color:white;
+    }
+    footer .footer-social ul {
+      padding-left: 0;
+    }
+    footer .footer-social ul li {
+      list-style: none;
+      float: left;
+      padding: 0 10px;
+    }
+    footer .footer-social ul li:first-child {
+      padding-left: 0;
+    }
+    footer .footer-social ul li a {
+      font-size: 30px;
+      color: white;
+    }
+    footer .footer-social ul li a:hover {
+      color: red;
+    }
+    footer .opening-time {
+      padding-left: 0;
+      color: white;
+    }
+    footer .opening-time li {
+      list-style: none;
+      color: white;
+      font-size: 20px;
+    }
+    footer .opening-time li span {
+      float: left;
+      padding-right: 10px;
+    }
+    footer .opening-time li span .fa-times {
+      color: red;
+      font-size: 20px;
+    }
+    footer .opening-time li strong {
+      color: aqua;
+    }
+    footer .media-body a {
+      color: white;
+      font-size: 20px;
+    }
+    footer .media-body a:hover {
+      color: red;
+    }
+    footer .media-body span {
+      color: aqua;
+      font-size: 20px;
+    }
+    footer .images-gellary ul {
+      padding-left: 0;
+    }
+    footer .images-gellary ul li {
+      list-style: none;
+      float: left;
+      margin: 0 3% 2% 0;
+      width: 31%;
+      position: relative;
+    }
+    footer .images-gellary ul li:nth-child(3n) {
+      margin: 0 0 1%;
+    }
+    #phone{
+      font-size: 20px;
+      color: white;
+    }
+    #mail{
+      font-size: 20px;
+      color: white;
+    }
+    .bail{
+      text-align: center;
+      font-size: 30px;
+      color: chartreuse;
+      font-family: 'Nosifer', cursive;
     }

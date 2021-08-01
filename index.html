@@ -7,10 +7,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
     <!-- Bootstrap, jQuery and css file linking -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- JQuery -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel=icon href="Images/pizza-slice.png" sizes="16x16" type="image/png">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
@@ -18,54 +21,58 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/598c6b517f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
     <!--landing section-->
     <section id="land" class="d-flex align-items-center">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
-            <img src="/images/logo.png" class="centerImage" alt="CH Logo" height="200" width="350">
+            <img src="./Images/logo.png" class="centerImage" alt="CH Logo" height="350">
           <h1>Welcome to <span>Bailey's Pizza Lounge</span></h1>
-          <h2>We strive to enable our clients to use their <br> information assets to save money, 
-            reduce risk and to discover and <br> realize new opportunities for their business or organisations. 
+          <h2>The homemade pizza dough is produced in-house daily <br>
+              and is another reason why the pizza at Bailey's Lounge <br> always tastes better.
+             <span id="lounge">Bailey's Pizza Lounge</span> is the obvious <br> and perfect option to please crowds of all ages
             </h2>
+            <div class="place-order">
+                <a href="#make-order" class="btn btn-primary"> Place Order Now!!</a>
+            </div>
           <!-- <div class="d-flex">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div> -->
         </div>
     </section><!-- end of landing section-->
-    
-    <div class="container">
+<!-- this the about section -->
+    <div class="container" id="show">
         <div class="row">
             <div class="col-md-3" id="Kitchen">
-                <h3>The Kitchen Lounge</h3>
-                <p>This section takes 3 columns of the grid</p>
+                <h4>Our Happy Customer</h4>
             </div>
             <div class="col-md-9">
                 <h3>Pizza</h3>
                     <div class=".container">
                         <div class="row">
                             <div class="col-sm">
-                                <img src="/images/pizz1.png" alt="" height="150" width="300">
+                                <img src="./Images/pizz1.png" alt="" height="150" width="300">
                             </div>
                             <div class="col-sm">
-                                <img src="/images/pizz2.png" alt="" height="150" width="300">
+                                <img src="./Images/pizz2.png" alt="" height="150" width="300">
                             </div>
                             <div class="col-sm">
-                                <img src="/images/pizz3.png" alt="" height="150" width="300">
+                                <img src="./Images/pizz3.png" alt="" height="150" width="300">
                             </div>
                         </div>
                     </div>
-                <p>Our Prices of Pizza</p>
+        <!-- table whowing the prices of different types of pizza -->
+                <h2 class="head2">Take a look at Prices of Our Pizzas'</h2>
                     <table class="table table-dark">
                         <thead>
                           <tr>
@@ -92,92 +99,261 @@
                           </tr>
                         </tbody>
                     </table>
-                      
+        <!-- table of Crust types and their prices -->
                 <div class="row">
                     <div class="col-md-6">
-                        <h3>Nested Grid Heading 1</h3>
-                            <p>This nested section takes 6 columns of the grid within the row</p>
+                        <h2 class="head2">Crust Types and Prices</h2>
+                        <table style="width:100%" class="crust">
+                            <tr>
+                                <th>Crust</th>
+                                <th>Price</th>
+
+                            </tr>
+                            <tr>
+                                <td>Crispy</td>
+                                <td>Ksh.150</td>
+
+                            </tr>
+                            <tr>
+                                <td>Stuffed</td>
+                                <td>Ksh.100</td>
+
+                            </tr>
+                            <tr>
+                                <td>Glutten-free</td>
+                                <td>Ksh.120</td>
+
+                            </tr>
+                        </table>
                     </div>
                     <div class="col-md-6">
-                        <h3>Nested Grid Heading 2</h3>
-                        <p>This nested section takes 6 columns of the grid within the row</p>
+        <!-- table of Toppings and prices -->
+                        <h2 class="head2">Toppings and Prices</h2>
+                        
+                        <table style="width:100%" class="crust">
+                            <tr>
+                                <th>Toppings</th>
+                                <th>Price</th>
+
+                            </tr>
+                            <tr>
+                                <td>Sausage</td>
+                                <td>Ksh.100</td>
+
+                            </tr>
+                            <tr>
+                                <td>Bacon</td>
+                                <td>Ksh.80</td>
+
+                            </tr>
+                            <tr>
+                                <td>Mushrooms</td>
+                                <td>Ksh.50</td>
+
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- this is a section you can make order of your favourite pizza -->
+<div class="container-fluid order" id="make-order">
+    <div class="order-overlay">
+        <div class="controls-top text-center" id="Order-now">
+            <h2 id="order-head">Welcome Our Customer<p style="font-size:50px">&#128095; &#128095;</p></h2>
+        </div>
+        <h2 id="now"><b>Make Your Order here NOW!!</b></h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <form id="myform" action="">
+                    <label for="select">Select Your Flavor</label><br>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                        <option selected value="choose">Select your flavor</option>
+                        <option value="Neapolitan Pizza">Neapolitan Pizza</option>
+                        <option value="Chicago Pizza">Chicago Pizza</option>
+                        <option value="New York Pizza">New York Pizza</option>
+                        <option value="Sicilian Pizza">Sicilian Pizza</option>
+                        <option value="Greek Pizza">Greek Pizza</option>
+                        <option value="Carlifornia Pizza">Carlifornia Pizza</option>
+                    </select><br><br>
+                    <label for="select">Select the Size   </label><br>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                        <option selected value="0">Select the Size here</option>
+                        <option value="large">Large @Ksh. 1200</option>
+                        <option value="medium">Medium @Ksh. 1000</option>
+                        <option value="small">Small @Ksh. 700</option>
+                    </select><br><br>
+                    <label for="crust">Select your favorite Crust</label><br>
+                    <select class="browser-default custom-select custom-select-md mb-3 " id="crust">
+                        <option selected value="0 ">Select your favorite Crust</option>
+                        <option value="Crispy">Crispy @Ksh. 150</option>
+                        <option value="Stuffed">Stuffed @Ksh. 100</option>
+                        <option value="Gluten-free">Gluten@Ksh. 120</option>
+                    </select><br><br>
+                    <label for="Toppings">Select Your Favourite Toppings</label><br>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                        <label class="custom-control-label" for="Sausage">Sausage</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                        <label class="custom-control-label" for="Bacon">Bacon</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                        <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
 
-    <div class="container-fluid order" id="make-order">
-        
-    </div><br>
-    <footer class="bg-light text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #3b5998;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Twitter -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #55acee;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
-      
-            <!-- Google -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #dd4b39;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-google"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #ac2bac;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Linkedin -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #0082ca;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn btn-primary btn-floating m-1"
-              style="background-color: #333333;"
-              href="#!"
-              role="button"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
+                    </div>
+                    <!-- <p><b>Each topping cost Ksh.60</b></p> -->
+
+                    <button type="submit" class="btn btn-orange proceed">Proceed</button>
+
+                </form>
+            </div>
+            <div class="col-sm-7">
+                <div id="information">
+                    <!-- <p> Kindly Make an order to allow us Process it faster and delivered in a very short time .</p>
+                    <p>The total amount including delivery fee will be paid upon delivery.</p> -->
+
+
+                </div>
+                <div class="choise">
+                    <h2 id="summary">Summary of Your Order</h2>
+                    <div id="your-orders">
+                        <table class="table table-sm pizzatable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Crust</th>
+                                    <th scope="col">Topping</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersmade">
+                                <tr>
+                                    <td id="pizzaname"></td>
+                                    <td id="pizzasize"></td>
+                                    <td id="pizzacrust"></td>
+                                    <td id="pizzatopping"></td>
+                                    <td id="totals"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p id="pizzatotal"></p>
+                        <p id="totalbill"></p>
+                        <p id="addedprice">Delivery fee is Ksh.200/-</p>
+                        <p id="finallmessage"></p>
+                    </div>
+                    <button class="btn btn-green addPizza">Add Another Pizza</button>
+                    <button class="btn btn-cyan" id="checkout">Checkout</button>
+                    <button class="btn btn-orange deliver">Continue</button>
+                    <button class="btn btn-red cancel">Cancel</button>
+                </div>
+                <div class="delivery">
+                    <form action=" ">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control mb-3" placeholder="Your name">
+                            <input type="number" id="phone" class="form-control mb-3" placeholder="Your Phone Number">
+                            <input type="text" id="location" class="form-control mb-3" placeholder="Your Location">
+                            <button class="btn btn-orange" id="final-order">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+</div>
+<!-- this is the footer section -->
+    <footer class="footer">
+            <img src="./Images/logo.png" class="centerImage1" alt="CH Logo" height="150">    
+            <p class="bail">Bailey's Pizza Lounge</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="footer-widget">
+                <h3>Contact Us</h3>
+                <div class="footer-widget-content">
+                    <i class="fa fa-map-marker" style="font-size:20px;color:aliceblue">Junction Mall</i> <br> <br>
+                    <i class="fas fa-phone" id="phone">+254-702-637-380</i> <br> <br>
+                    <i class="fas fa-envelope" id="mail"><a href="mailto:support@baileyslounge.co.ke">support@baileyslounge.co.ke</a></i> <br> <br>
+                  <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ItsEngObadiah"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kiprotich-obadiah-442a44141/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+            <div class="footer-widget">
+              <h3>Offers | Promotions</h3>
+              <div class="footer-widget-content">
+                <div class="media">
+                    <div class="media-left">
+                       <a href="#"><img class="media-object" src="https://media.istockphoto.com/vectors/sale-of-special-offers-and-discount-arrow-banner-template-vector-vector-id1185438913?k=6&m=1185438913&s=612x612&w=0&h=A8kzVY2oqnYg1rUSTqvuPUQ4RfPoFQvHwhUQtbrIZkU=" alt="image" height="80px"></a>
+                    </div>
+                    <div class="media-body">
+                       <p><a href="#">Tuesday Splash </a></p>
+                       <span>Every Tuesday</span>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                       <a href="#."><img class="media-object" src="https://ak.picdn.net/shutterstock/videos/1068525218/thumb/8.jpg?ip=x480" alt="image" height="80px"></a>
+                    </div>
+                    <div class="media-body">
+                       <p><a href="#">Exclusive Weekends </a></p>
+                       <span>Every Saturday</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-3">
+            <div class="footer-widget">
+              <h3>Opening Hour</h3>
+              <div class="footer-widget-content">
+              <div class="open-time ">
+                <ul class="opening-time">
+                  <li><span><i class="fa fa-times"></i></span><p class="clock-time"><strong>Sunday :</strong> closed</p>
+                   </li>
+                  <li><span><i class="fa fa-check"></i></span><p><strong>Monday-Friday :</strong> 7am - 9pm</p></li>
+                  <li><span><i class="fa fa-check"></i></span><p><strong>Saturday :</strong> 7am - 6pm</p></li>
+                  <li><span><i class="fa fa-check"></i></span><p><strong>Holidays :</strong> 12pm- 6pm</p></li>
+                </ul>
+                 </div>
+              </div>
+              </div></div>
+            
+            <div class="col-sm-3">
+            <div class="footer-widget">
+              <h3>Pick any number to Win a Pizza</h3>
+              <div class="footer-widget-content">
+                <div class="images-gellary">
+                  <ul>
+                    <li><a href="#"><img src="./Images/one.png" alt="img" width="80px" height="60px"></a></li>
+                    <li><a href="#"><img src="./Images/two.jpg" alt="img" width="80px" height="60px"></a></li>
+                    <li><a href="#"><img src="./Images/three.jpg" alt="img" width="70px" height="60px"></a></li>
+                    <li><a href="#"><img src="./Images/four.png" alt="img" width="80px" height="65px"></a></li>
+                    <li><a href="#"><img src="./Images/five.jpg" alt="img" width="80px" height="65px"></a></li>
+                    <li><a href="#"><img src="./Images/six.jpg" alt="img" width="70px"  height="65px"></a></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Copyright -->
       </footer>
+<!-- js and jQuerry linking -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
